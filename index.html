@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analysis, Visual Storytelling & Communication Design | Portfolio</title>
+    <script>
+        (function() {
+            let savedTheme = 'dark';
+            try {
+                if (localStorage.getItem('theme') === 'light') savedTheme = 'light';
+            } catch {}
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        })();
+    </script>
+    <meta name="description"
+        content="Portfolio and services in data analysis, visual storytelling, communication design, policy research, and publication design.">
+    <link rel="stylesheet" href="style.css?v=17">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="brand-logo">
+                <img src="./assets/muhammaduu.logo.png" alt="Studio Logo" class="brand-logo-img">
+            </a>
+            <div class="nav-links desktop-only">
+                <a href="#hero" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+
+                <a href="#work" class="nav-link">Work</a>
+                <a href="#process" class="nav-link">Process</a>
+                <a href="#services" class="nav-link">Services</a>
+            </div>
+            <div class="nav-right" style="display: flex; align-items: center; gap: 1.5rem;">
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme">
+                    <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.07" x2="5.64" y2="17.66"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+                <a href="#contact" class="btn-nav">Start a Project</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Smooth Scroll Wrapper -->
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+
+            <!-- 1. HERO SECTION -->
+            <section id="hero" class="hero-section">
+
+
+                <div class="container hero-content"
+                    style="display:flex; flex-direction:column; justify-content:center; max-width: 1100px;">
+                    <h1 class="hero-headline">Making evidence <br><span class="italic text-accent">easier to understand.</span></h1>
+                    <p class="hero-subtext">I turn data and policy research into clear visuals and publications.</p>
+                    <p class="hero-micro">Data Analysis | Visual Storytelling | Communication Design</p>
+                    <div class="cta-group">
+                        <a href="#contact" class="btn btn-primary">Discuss a Project</a>
+                        <a href="./assets/muhammad-zakariya-ibrahim-resume.pdf" class="btn btn-secondary">View Resume (PDF)</a>
+                    </div>
+                    <a class="scroll-indicator" href="#about" aria-label="Scroll down to About">
+                        <span>Scroll down</span>
+                        <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m6 9 6 6 6-6"/>
+                        </svg>
+                    </a>
+                </div>
+            </section>
+
+            <!-- 2. ABOUT SECTION -->
+            <section id="about" class="section about-section bg-black text-light">
+                <div class="container reveal-up">
+                    <div class="about-content grid-2-col" style="align-items: center;">
+                        <div class="about-text-left flex-col">
+                            <h2 class="section-title">About</h2>
+                            <p class="large-paragraph">I analyse data, research policy questions, and design ways to share what the evidence shows.</p>
+                            <p class="text-muted" style="max-width: 90%;">I work across analysis, visual storytelling, and editorial design to help research teams and organisations explain their findings. The format follows the audience and the question, from a chart for a presentation to a policy brief or a full report.</p>
+                            <div>
+                                <a href="#contact" class="btn btn-outline">Work With Me</a>
+                            </div>
+                        </div>
+                        <div class="about-image-space reveal-up delay-1">
+                            <img src="./IMGs/my-foto@3x.png" alt="Portfolio author" class="about-portrait">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="work" class="section work-section bg-dark text-light">
+                <div class="container">
+                    <div class="section-header reveal-up">
+                        <h2 class="section-title">Selected Work</h2>
+                        <p class="text-muted mt-s">Policy research, data visualisation, and publication design. Includes work for the Sustainable Development Conversations Initiative (SDCI) and independent research.</p>
+                    </div>
+                    <div class="selected-work-grid pt-l">
+                        <article class="selected-work-card reveal-up">
+                            <img src="./assets/projects/bauchi-education-skills.jpg" alt="Education &amp; Skills report cover with students around an illustrated puzzle" width="1400" height="1400" loading="lazy">
+                            <div class="selected-work-copy">
+                                <p class="project-meta text-muted">Education policy · Nine-Pillar Research Series, vol. 1</p>
+                                <h3>The Bauchi Question: Education &amp; Skills</h3>
+                                <p class="text-muted">An assessment of school access, learning outcomes, teaching capacity, equity, and education financing in Bauchi State. The report pairs statewide evidence with local government profiles to identify priorities for reform.</p>
+                                <p class="project-role"><strong>My role</strong> · Research, data analysis, visualisation, and design</p>
+                                <a class="btn btn-outline project-link" href="./assets/projects/bauchi-education-skills.pdf" aria-label="Read The Bauchi Question: Education &amp; Skills (PDF)">Read report (PDF)</a>
+                            </div>
+                        </article>
+                        <article class="selected-work-card reveal-up delay-1">
+                            <img src="./assets/projects/bauchi-multipolar-crossroads.jpg" alt="Multipolar Crossroads report cover with a road between mining and renewable energy landscapes" width="1400" height="1400" loading="lazy">
+                            <div class="selected-work-copy">
+                                <p class="project-meta text-muted">Economic development · Fiscal governance</p>
+                                <h3>Bauchi at the Multipolar Crossroads</h3>
+                                <p class="text-muted">A policy report on how mining investment, regional insecurity, and foreign-currency debt shape Bauchi State’s development choices. It examines whether the state’s institutions can turn these pressures into lasting local benefits.</p>
+                                <p class="project-role"><strong>My role</strong> · Research and policy advocacy lead, data analysis, visualisation, and design</p>
+                                <a class="btn btn-outline project-link" href="./assets/projects/bauchi-multipolar-crossroads.pdf" aria-label="Read the draft of Bauchi at the Multipolar Crossroads (PDF)">Read draft (PDF)</a>
+                            </div>
+                        </article>
+                        <article class="selected-work-card reveal-up">
+                            <img src="./assets/projects/sdci-policy-briefs.jpg" alt="" width="1400" height="1400" loading="lazy">
+                            <div class="selected-work-copy">
+                                <p class="project-meta text-muted">Bauchi Fiscal Research Programme · September 2026</p>
+                                <h3>SDCI Policy Brief Design</h3>
+                                <p class="text-muted">Two policy briefs on mineral governance in Bauchi State. The first uses the BMCC case to examine land rights and compensation. The second proposes a minerals security function for a future Bauchi State Police Service.</p>
+                                <p class="project-role"><strong>My role</strong> · Publication design</p>
+                                <a class="btn btn-outline project-link" href="./assets/projects/sdci-policy-briefs.pdf">Read both briefs (PDF)</a>
+                            </div>
+                        </article>
+                        <article class="selected-work-card independent-research reveal-up">
+                            <div class="selected-work-copy">
+                                <p class="project-meta text-accent">Independent research · Coming soon</p>
+                                <h3>The Price of Sovereignty</h3>
+                                <p>How Global Financial Shocks, Geopolitical Risk, and Domestic Institutions Shape the Cost of Capital in Emerging and Frontier Economies</p>
+                                <p class="text-muted">Why do some countries experience severe financial distress when global conditions change, while others withstand similar shocks—and can we identify the conditions that make the difference before a crisis occurs?</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Process -->
+            <section id="process" class="section process-section bg-light">
+                <div class="container reveal-up">
+                    <div class="process-header mb-l">
+                        <h2 class="section-title">How I Work</h2>
+                        <p class="text-muted mt-s">From the research question to the finished publication.</p>
+                    </div>
+                    <div class="process-grid">
+                        <article class="process-card">
+                            <p class="process-label">Research</p>
+                            <h3>Frame the question</h3>
+                            <p class="text-muted">Define what the audience needs to know, then review available data and sources.</p>
+                        </article>
+                        <article class="process-card">
+                            <p class="process-label">Analysis</p>
+                            <h3>Analyse the evidence</h3>
+                            <p class="text-muted">Check data quality, compare findings, and document the limitations that affect interpretation.</p>
+                        </article>
+                        <article class="process-card">
+                            <p class="process-label">Communication</p>
+                            <h3>Design for the reader</h3>
+                            <p class="text-muted">Build charts and layouts around the main findings. Review the text, figures, and sources before delivery.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="services" class="section services-section bg-dark text-light border-top-dark">
+                <div class="container">
+                    <div class="services-header reveal-up mb-xl text-center">
+                        <h2 class="section-title">Services</h2>
+                    </div>
+                    <div class="pricing-grid grid-3-col reveal-up delay-1">
+                        <article class="pricing-card border-subtle p-l flex-col gap-m interaction-hover">
+                            <h3>Data Analysis</h3>
+                            <p class="text-muted">Understand what your data shows and where the evidence has limits.</p>
+                            <ul class="pricing-features text-muted flex-col gap-xs">
+                                <li>Data cleaning and validation</li>
+                                <li>Exploratory analysis</li>
+                                <li>Summary tables and findings</li>
+                            </ul>
+                        </article>
+                        <article class="pricing-card border-subtle p-l flex-col gap-m interaction-hover">
+                            <h3>Visual Storytelling &amp; Communication Design</h3>
+                            <p class="text-muted">Make complex findings easier to read, present, and share.</p>
+                            <ul class="pricing-features text-muted flex-col gap-xs">
+                                <li>Charts and infographics</li>
+                                <li>Research presentations</li>
+                                <li>Editorial layout and visual systems</li>
+                            </ul>
+                        </article>
+                        <article class="pricing-card border-subtle p-l flex-col gap-m interaction-hover">
+                            <h3>Policy Research &amp; Publication</h3>
+                            <p class="text-muted">Develop and present evidence around a specific policy question.</p>
+                            <ul class="pricing-features text-muted flex-col gap-xs">
+                                <li>Desk research and evidence synthesis</li>
+                                <li>Policy briefs and research reports</li>
+                                <li>Publication layout and production</li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact -->
+            <footer id="contact" class="footer bg-black text-light">
+                <div class="container">
+                    <div class="footer-cta reveal-up pt-xl pb-xl border-bottom-subtle">
+                        <h2 class="cta-headline">Let’s talk about your project.</h2>
+                        <p class="cta-subtext text-muted mt-m">Share the question you’re working on, who needs the findings, and when you need them.</p>
+                        <a href="mailto:hello@studioculture.com" class="btn btn-primary mt-m">Email Me</a>
+                    </div>
+
+                    <div class="footer-bottom pt-l pb-l flex-between reveal-up delay-1">
+                        <div class="footer-brand">
+                            <img src="./assets/muhammaduu.logo.png" alt="Studio Logo"
+                                class="brand-logo-img footer-logo">
+                        </div>
+                        <div class="footer-links flex-gap">
+                            <a href="mailto:hello@studioculture.com"
+                                class="text-muted link-hover">hello@studioculture.com</a>
+                            <a href="https://www.linkedin.com/in/muhammad-zakariya-ibrahim-7b882b224/"
+                                class="text-muted link-hover">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
